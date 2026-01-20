@@ -2,7 +2,7 @@ import tkinter as tk
 window=tk.Tk()
 window.title("number pad")
 window.geometry("400x300")
-f1=tk.Frame(master=window)
+f1=tk.Frame(master=window,width=200,height=250)
 f1.place(x=100,y=40)
 
 btn=tk.Button(master=f1,text="0",fg="red")
@@ -34,5 +34,6 @@ btn8.place(x=120,y=100)
 
 btn9=tk.Button(master=f1,text="9",fg="red")
 btn9.place(x=0,y=150)
+
 
 window.mainloop()
